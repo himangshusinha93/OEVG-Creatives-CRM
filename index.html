@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OEVG Creatives CRM | HQ Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-main: #0b0e14;
+        --bg-card: #151c2c;
+        --accent-orange: #ff6b3d;
+        --accent-blue: #3c9cfd;
+        --accent-teal: #00d1ff;
+        --accent-coral: #ff4b6b;
+      }
+      
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: var(--bg-main);
+        color: #f8fafc;
+      }
+      
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg-main); 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2d3748; 
+        border-radius: 10px;
+      }
+      
+      .glass-card {
+        background: var(--bg-card);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+      }
+      
+      .active-sidebar-item {
+        background: rgba(255, 107, 61, 0.1);
+        color: var(--accent-orange);
+        border-right: 3px solid var(--accent-orange);
+      }
+
+      .btn-primary {
+        background-color: var(--accent-orange);
+        color: white;
+      }
+      
+      .analytics-card-total { background: #1a2235; }
+      .analytics-card-complete { background: #00a3ff; }
+      .analytics-card-working { background: #ff9d00; }
+      .analytics-card-pending { background: #ff4b2b; }
+      
+      input, select, textarea {
+        background-color: rgba(255, 255, 255, 0.03) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+      }
+      
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "recharts": "https://esm.sh/recharts@^3.5.1",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
